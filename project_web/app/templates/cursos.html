@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos EaD Faesa</title>
+    {% load static %}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo-gif" src="{% static 'FAESA.gif' %}"" alt=" Logomarca EaD Faesa">
+        <div class="navbar">
+            <a href="#section1">ADS</a>
+            <a href="#section2">Redes</a>
+            <a href="#section3">Sistemas</a>
+        </div>
+    </header>
+
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <section class="blue">
+        <h1>CURSOS EAD - FAESA</h1>
+        <div class="curve"></div>
+    </section>
+    <section class="tecnologos">
+        <div class="tecnologos-wrap">
+            <h1>Tecnólogos</h1>
+            <p class="content">Desperte a chama do conhecimento dentro de você e ilumine seu caminho rumo ao sucesso
+                acadêmico e
+                profissional. Na jornada do aprendizado, cada página virada é uma conquista, cada desafio superado é um
+                degrau a mais na escada do crescimento. Acredite no seu potencial, persista com determinação e deixe seu
+                brilho acadêmico irradiar para o mundo. O futuro é seu para moldar, e a educação é a chave que abre
+                todas as
+                portas. Vamos juntos transformar sonhos em realidade!</p>
+        </div>
+    </section>
+    <section class="bubble">
+        <h1></h1>
+        <p class="content">.</p>
+    </section>
+    <section id="section1" class="ads">
+        <div class="ads-wrap">
+            <h1>Tecnologia em Análise e Desenvolvimento de Sistemas</h1>
+            <p class="content">Os profissionais formados em Análise e Desenvolvimento de Sistemas projetam e desenvolvem
+                soluções
+                tecnológicas, impulsionando a inovação e a transformação digital.</p>
+        </div>
+    </section>
+    <section class="red">
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <div class="spacer layer1"></div>
+
+    <section id="section2" class="redes">
+        <div class="redes-wrap">
+            <h1>Redes de Computadores</h1>
+            <p class="content">O profissional graduado em Redes de Computadores é responsável por elaborar, implantar,
+                gerenciar e manter projetos lógicos e físicos de redes de computadores locais e de longa distância.
+                Grandes
+                corporações, pequenas e médias empresas, o setor de serviços, indústrias, comércio, a área de educação e
+                órgãos públicos, todos necessitam de profissionais na área de redes de computadores, para oferecer a
+                infraestrutura computacional necessária para o desenvolvimento dos negócios e das organizações.</p>
+        </div>
+    </section>
+
+    <div class="spacer layer2 flip"></div>
+    <div class="spacer layer2"></div>
+
+    <section id="section3" class="sistemas">
+        <div class="sistemas-wrap">
+
+            <h1>Sistemas de Informação EAD</h1>
+            <p class="content">Os profissionais formados em Sistemas de Informação são especialistas em gestão e
+                desenvolvimento de
+                sistemas, atuando como ponte entre a tecnologia e as necessidades das organizações.
+            </p>
+
+        </div>
+        <div class="bubble-move">
+            <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(432.95138305905664 323.4749462328367)">
+                    <path id="blob1"
+                        d="M169 -160C213.5 -124.5 240.2 -62.2 226.8 -13.4C213.4 35.4 159.7 70.7 115.2 102C70.7 133.4 35.4 160.7 -2.5 163.2C-40.3 165.6 -80.6 143.3 -112.6 111.9C-144.6 80.6 -168.3 40.3 -183.5 -15.2C-198.7 -70.7 -205.4 -141.4 -173.4 -176.9C-141.4 -212.4 -70.7 -212.7 -4.2 -208.5C62.2 -204.2 124.5 -195.5 169 -160"
+                        fill="#BB004B"></path>
+                </g>
+                <g transform="translate(433.86307791271616 298.0430147357993)" style="visibility: hidden">
+                    <path id="blob2"
+                        d="M155.4 -175.4C180.8 -130.1 166.4 -65.1 169.2 2.8C172 70.7 192.1 141.4 166.8 185.9C141.4 230.4 70.7 248.7 10.6 238.1C-49.5 227.5 -99 188 -124 143.5C-149 99 -149.5 49.5 -144.9 4.6C-140.3 -40.3 -130.6 -80.6 -105.6 -125.9C-80.6 -171.3 -40.3 -221.6 12.4 -234C65.1 -246.4 130.1 -220.8 155.4 -175.4"
+                        fill="#BB004B"></path>
+                </g>
+            </svg>
+        </div>
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: '#blob1' },
+                { path: '#blob2' },
+                { repeat: 999, duration: 3000, yoyo: true }
+            ).start()
+        </script>
+    </section>
+    <div class="spacer layer2 flip"></div>
+    <div class="spacer layer2"></div>
+
+    <section class="blobs">
+        <div class="blobs-wrap">
+            <h1>ESTUDE!</h1>
+            <p class="content">A jornada rumo ao sucesso é pavimentada com a preciosa chave do estudo. Cada página
+                virada,
+                cada conhecimento absorvido, são degraus que nos aproximam cada vez mais do tão sonhado destino. Quanto
+                mais
+                nos dedicamos ao estudo, mais ampliamos nossas chances de realizar nossos sonhos mais profundos e
+                acalentados.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <p class="footer_name">Graduação e Técnico</p>
+            <p class="footer_tag">Contato: (27) 2122-4100</p>
+        </div>
+        <div class="footer_container">
+            <p class="footer_name">Pós-Graduação</p>
+            <p class="footer_tag">Contato: (27) 2122-4505</p>
+            <p class="footer_tag">Contato: (27) 2122-4508</p>
+        </div>
+        <div class="footer_container">
+            <p class="footer_name">Educação a distancia </p>
+            <p class="footer_tag">Contato: (27) 3003-2692</p>
+            <p class="footer_tag">Contato: (27) 99275-9806</p>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // Safari
+            document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>

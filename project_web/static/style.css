@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    font-family: "Prompt", sans-serif;
+    color: white;
+    background: #202731;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* navbar */
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background: #3c31dd;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-gif {
+    position: relative;
+    height: 11vh;
+    padding-left: 3%;
+}
+.navbar {
+    position: relative;
+    text-align: center;
+    margin-right: 7%;
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    color: #00abf0;
+}
+
+/* sections */
+.blue {
+    background: #3c31dd;
+}
+.red {
+    background: #dd3f31;
+}
+.tecnologos {
+    font-size: 25px;
+    font-weight: 200;
+}
+.tecnologos-wrap {
+    width: 50%;
+    justify-items: center;
+    height: 40vh;
+    margin-bottom: 100px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+}
+.ads {
+    background-image: url("./ADS.jpg");
+    background-size: cover;
+    font-size: 25px;
+    font-weight: 200;
+}
+.ads-wrap {
+    width: 50%;
+    justify-items: center;
+    height: 40vh;
+    margin-bottom: 100px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+    background-color: #202731;
+}
+.redes {
+    background-image: url("./REDES.jpg");
+    background-size: cover;
+    font-size: 25px;
+    font-weight: 200;
+}
+.redes-wrap {
+    width: 50%;
+    justify-items: center;
+    height: 50vh;
+    margin-bottom: 100px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+    background-color: #202731;
+}
+.sistemas {
+    background: url("./SISTEMAS.jpg");
+    background-size: cover;
+    font-size: 25px;
+    font-weight: 200;
+    overflow: hidden;
+}
+.sistemas-wrap {
+    width: 35%;
+    height: 40vh;
+    margin-bottom: 100px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #202731;
+    text-align: center;
+
+}
+.blobs {
+    font-size: 25px;
+    font-weight: 200;
+    width: 100%;
+    background: url("./blobs.svg") no-repeat bottom / cover;
+    text-align: center;
+}
+.blobs-wrap {
+    width: 35%;
+    height: 40vh;
+    margin-bottom: 100px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #202731;
+}
+
+.content {
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* efeitos de curvas que divide as paginas */
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.curve::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 21%, 16%);
+}
+
+.curve::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #3c31dd;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+.bubble::after {
+    content: "";
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #0f0f10;
+    height: 85%;
+}
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 342px;
+}
+
+.wave .shape-fill {
+    fill: #0f0f10;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("./layer1.svg");
+}
+
+.layer2 {
+    background-image: url("./layer2.svg");
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+}
+
+.blobs h1 {
+    margin-top: 0px;
+}
+
+/* rodapé */
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_container {
+    margin: 1%;
+    height: 10vh;
+    margin-top: 3%;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.footer_tag:hover {
+    color: #00abf0;
+}
+
+.footer_name {
+    font-weight: 200;
+    font-size: 25px;
+}
+
+/* button go to top */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #3c31dd;
+    color: white;
+    border: none;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #333;
+}
