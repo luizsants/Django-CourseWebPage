@@ -6,7 +6,6 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('home/', views.home, name='home'),  # Define a view named 'home'
+    path('home/', views.home, name='home'),
     path('admin/', admin.site.urls),
-    # Add other URL patterns as needed
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
