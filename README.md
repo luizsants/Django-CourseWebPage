@@ -1,3 +1,5 @@
+Simple page that uses static files in django. Mostly CSS and HTML.
+
 1 python3 -m venv myenv
 
 2 source myenv/bin/activate (linux)
